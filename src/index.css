@@ -1,0 +1,112 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #9aeea6;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.citizen-details {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.citizen-details .number {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+  min-width: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.citizen-details .info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.citizen-details .info .name {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.citizen-details .info .age,
+.citizen-details .info .address,
+.citizen-details .info .status {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.citizen-details .info .status.active {
+  color: #1A5319;
+  font-weight: bold;
+}
+
+.citizen-details .info .status.inactive {
+  color: #1A5319;
+  font-weight: bold;
+}
+
+button {
+  background-color: #1A5319;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+  background-color: #b4e380;
+  transform: scale(1.05);
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+  transition: border-color 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type="text"]:focus {
+  border-color: #88d66c;
+  outline: none;
+}
